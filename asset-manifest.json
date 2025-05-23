@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.19384d50.css",
+    "main.js": "/my-portfolio/static/js/main.afcab70a.js",
+    "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/profile.png": "/my-portfolio/static/media/profile.bf6108e05b961bacb48c.png",
+    "static/media/fox0.png": "/my-portfolio/static/media/fox0.03b16c420b17d5ee1b65.png",
+    "static/media/auction0.png": "/my-portfolio/static/media/auction0.fb2f2bcacc15e1228824.png",
+    "static/media/auction1.png": "/my-portfolio/static/media/auction1.972caca69c18bf63e5b6.png",
+    "static/media/auction2.png": "/my-portfolio/static/media/auction2.e2d5e11158eadf29a58f.png",
+    "static/media/fox1.png": "/my-portfolio/static/media/fox1.0aa7ad097fd672965f07.png",
+    "static/media/hostel0.png": "/my-portfolio/static/media/hostel0.b01fe3f92069af57b8d6.png",
+    "static/media/student0.png": "/my-portfolio/static/media/student0.bb263fcce45f76b752bf.png",
+    "static/media/student1.png": "/my-portfolio/static/media/student1.0e6bf95e4022e206cef2.png",
+    "static/media/hostal1.png": "/my-portfolio/static/media/hostal1.57e91f02a705f64a765f.png",
+    "static/media/robo0.jpg": "/my-portfolio/static/media/robo0.e69a2dfdf83b22ea371a.jpg",
+    "static/media/robo1.jpg": "/my-portfolio/static/media/robo1.376857457aa0df6e01cd.jpg",
+    "static/media/hostal2.png": "/my-portfolio/static/media/hostal2.2238c12e578469ce2f0e.png",
+    "static/media/fox2.png": "/my-portfolio/static/media/fox2.8d1d6ae062a45d59ef6b.png",
+    "static/media/track1.png": "/my-portfolio/static/media/track1.38d4bb4e58e72a6abdd2.png",
+    "static/media/doclink2.jpg": "/my-portfolio/static/media/doclink2.8076a7c7d21c1fe7fdab.jpg",
+    "static/media/track0.png": "/my-portfolio/static/media/track0.7ee6663c543fede15b83.png",
+    "static/media/doclink0.png": "/my-portfolio/static/media/doclink0.094a5ed32743fee6cb74.png",
+    "static/media/fox3.png": "/my-portfolio/static/media/fox3.3b84c76fc236269ef180.png",
+    "static/media/track2.png": "/my-portfolio/static/media/track2.bef9cd5137475220271d.png",
+    "static/media/doclink1.jpg": "/my-portfolio/static/media/doclink1.ce094529c81c64e893dc.jpg",
+    "static/media/student2.png": "/my-portfolio/static/media/student2.e8a3262df7b807f70c02.png",
+    "static/media/student3.png": "/my-portfolio/static/media/student3.f1573372aadd5661ecf8.png",
+    "static/media/track3.png": "/my-portfolio/static/media/track3.9d8774041555b125f52b.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.19384d50.css.map": "/my-portfolio/static/css/main.19384d50.css.map",
+    "main.afcab70a.js.map": "/my-portfolio/static/js/main.afcab70a.js.map",
+    "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19384d50.css",
+    "static/js/main.afcab70a.js"
+  ]
+}
