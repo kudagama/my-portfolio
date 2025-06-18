@@ -118,18 +118,22 @@ const style = document.createElement("style");
 style.innerHTML = `
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
   
+  * {
+    box-sizing: border-box;
+  }
+  
   html, body {
     height: 100%;
     width: 100vw;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
     background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
     color: #222;
     transition: background 0.4s, color 0.4s;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    font-size: 16px;
   }
   
   body.dark-mode {
@@ -235,7 +239,7 @@ style.innerHTML = `
   }
   
   .theme-toggle-btn {
-    position: absolute;
+    position: fixed;
     top: 24px;
     right: 24px;
     background: rgba(255, 255, 255, 0.9);
@@ -265,6 +269,364 @@ style.innerHTML = `
     color: #93c5fd;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
+  
+  /* Responsive Design */
+  
+  /* Large Desktop */
+  @media (min-width: 1200px) {
+    .portfolio-container {
+      padding: 0 40px 40px 40px;
+    }
+    
+    .about-me-section {
+      margin: 40px auto 0 auto;
+      padding: 40px;
+    }
+    
+    .about-me-section h2 {
+      font-size: 36px;
+    }
+    
+    .about-me-section p {
+      font-size: 18px;
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .portfolio-container {
+      padding: 0 24px 40px 24px;
+    }
+    
+    .about-me-section {
+      margin: 32px auto 0 auto;
+      padding: 32px;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .theme-toggle-btn {
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    
+    .about-me-section {
+      margin: 24px 16px 0 16px;
+      padding: 24px;
+      border-radius: 20px;
+    }
+    
+    .about-me-section h2 {
+      font-size: 28px;
+    }
+    
+    .about-me-section p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile Large */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .portfolio-container {
+      padding: 0 16px 32px 16px;
+    }
+    
+    .theme-toggle-btn {
+      top: 16px;
+      right: 16px;
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+    
+    .about-me-section {
+      margin: 20px 8px 0 8px;
+      padding: 20px;
+      border-radius: 16px;
+    }
+    
+    .about-me-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .about-me-section p {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+  }
+  
+  /* Mobile Small */
+  @media (max-width: 480px) {
+    .portfolio-container {
+      padding: 0 12px 24px 12px;
+    }
+    
+    .theme-toggle-btn {
+      top: 12px;
+      right: 12px;
+      padding: 6px 12px;
+      font-size: 12px;
+      border-radius: 25px;
+    }
+    
+    .about-me-section {
+      margin: 16px 4px 0 4px;
+      padding: 16px;
+      border-radius: 12px;
+    }
+    
+    .about-me-section h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    
+    .about-me-section p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+  
+  /* Projects Grid Responsive */
+  .projects-grid {
+    display: grid;
+    gap: 32px;
+    perspective: 1000px;
+  }
+  
+  /* Desktop Grid */
+  @media (min-width: 1200px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 40px;
+    }
+  }
+  
+  /* Tablet Grid */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+  }
+  
+  /* Mobile Grid */
+  @media (max-width: 767px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+  
+  /* Project Cards Responsive */
+  .project-card {
+    min-height: 240px;
+  }
+  
+  @media (min-width: 768px) {
+    .project-card {
+      min-height: 280px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .project-card {
+      min-height: auto;
+      padding: 20px;
+    }
+  }
+  
+  /* Skills Section Responsive */
+  .skills-section {
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+    padding: 32px 24px;
+  }
+  
+  @media (min-width: 1200px) {
+    .skills-section {
+      max-width: 900px;
+      padding: 40px 32px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .skills-section {
+      margin: 40px 16px 0 16px;
+      padding: 24px 16px;
+      border-radius: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-section {
+      margin: 32px 8px 0 8px;
+      padding: 20px 12px;
+      border-radius: 12px;
+    }
+  }
+  
+  /* Header Responsive */
+  .portfolio-header {
+    padding: 80px 20px 40px 20px;
+  }
+  
+  @media (min-width: 1200px) {
+    .portfolio-header {
+      padding: 100px 40px 60px 40px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .portfolio-header {
+      padding: 60px 16px 32px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-header {
+      padding: 50px 12px 24px 12px;
+    }
+  }
+  
+  /* Profile Image Responsive */
+  .profile-frame {
+    width: 180px;
+    height: 180px;
+  }
+  
+  @media (min-width: 1200px) {
+    .profile-frame {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .profile-frame {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-frame {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  /* Typography Responsive */
+  .portfolio-name {
+    font-size: clamp(32px, 5vw, 48px);
+  }
+  
+  .portfolio-title {
+    font-size: clamp(16px, 3vw, 20px);
+  }
+  
+  .portfolio-contact {
+    font-size: clamp(14px, 2.5vw, 16px);
+  }
+  
+  .projects-heading {
+    font-size: clamp(28px, 5vw, 36px);
+  }
+  
+  /* Modal Responsive */
+  .modal-content {
+    max-width: 600px;
+    padding: 40px 32px;
+  }
+  
+  @media (max-width: 767px) {
+    .modal-content {
+      max-width: 95vw;
+      padding: 24px 20px;
+      margin: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-content {
+      padding: 20px 16px;
+      margin: 10px;
+    }
+  }
+  
+  /* Image Grid Responsive */
+  .project-images {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  @media (max-width: 767px) {
+    .project-images {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+  
+  /* Footer Responsive */
+  .portfolio-footer {
+    margin-top: 80px;
+    padding: 0 24px;
+  }
+  
+  @media (max-width: 767px) {
+    .portfolio-footer {
+      margin-top: 60px;
+      padding: 0 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-footer {
+      margin-top: 40px;
+      padding: 0 12px;
+    }
+  }
+  
+  /* Touch Device Optimizations */
+  @media (hover: none) and (pointer: coarse) {
+    .project-card:hover {
+      transform: none;
+    }
+    
+    .theme-toggle-btn:hover {
+      transform: none;
+    }
+  }
+  
+  /* High DPI Displays */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .profile-img {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+  }
+  
+  /* Print Styles */
+  @media print {
+    .theme-toggle-btn {
+      display: none;
+    }
+    
+    .portfolio-container {
+      background: white !important;
+      color: black !important;
+    }
+    
+    .about-me-section,
+    .skills-section,
+    .project-card {
+      background: white !important;
+      color: black !important;
+      box-shadow: none !important;
+      border: 1px solid #ccc !important;
+    }
+  }
 `;
 document.head.appendChild(style);
 
@@ -282,7 +644,9 @@ const languageColors = {
   "Kotlin": "#B125EA",
   "MySQL": "#00758F",
   "Firebase": "#FFA611",
-  "Arduino": "#00979D"
+  "Arduino": "#00979D",
+  "JasperReports": "#FF6B35",
+  "Java Swing": "#f89820"
 };
 
 // Function to calculate skills data from projects
